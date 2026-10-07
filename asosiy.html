@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf7ff" />
+    <title>Asrorjon portfoliosi</title>
+    <link rel="stylesheet" href="./portfolio.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="ism" href="./asosiy.html">Asrorjon portfoliosi</a>
+      <nav class="nav" aria-label="Asosiy navigatsiya">
+        <a class="active" href="./asosiy.html" aria-current="page">Asosiy</a>
+        <a href="./men-haqimda.html">Men haqimda</a>
+        <a href="./kontakt.html">Kontakt</a>
+      </nav>
+      <a class="hire-button" href="./kontakt.html">Meni yollang</a>
+    </header>
+
+    <main class="main-content">
+      <section class="intro card" aria-labelledby="intro-title">
+        <img class="men" src="./men.jpg" alt="Asrorjonning portret surati" />
+        <div class="intro-copy">
+          <h1 id="intro-title" class="name">Asrorjon</h1>
+          <p class="title">Frontend Developer</p>
+          <p class="bio">
+            Men oddiy va foydali veb saytlar yaratishni yoqtiraman. Yangi
+            narsalarni o'rganishga qiziqaman va amaliyot qilish orqali o'saman.
+          </p>
+          <a class="primary-button" href="#loyihalar">Mening ishlarim</a>
+        </div>
+      </section>
+
+      <div class="details-grid">
+        <section class="card detail-card" aria-labelledby="skills-title">
+          <h2 id="skills-title" class="section-title">Men biladigan texnologiyalar</h2>
+          <div class="divider"></div>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </section>
+
+        <section class="card detail-card" aria-labelledby="counter-title">
+          <h2 id="counter-title" class="section-title">Mini Funksiya: Counter</h2>
+          <div class="divider"></div>
+          <div class="counter" aria-live="polite">
+            <output id="counter-value" class="counter-value">12</output>
+            <div class="counter-controls">
+              <button class="counter-button icon-button" id="decrease" type="button" aria-label="Kamaytirish">−</button>
+              <button class="counter-button reset-button" id="reset" type="button">Qaytarish</button>
+              <button class="counter-button icon-button" id="increase" type="button" aria-label="Ko'paytirish">+</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <span id="loyihalar" class="anchor-target" aria-hidden="true"></span>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-brand">Amethyst Portfolio</p>
+      <p>© 2026 Portfolio. Barcha huquqlar himoyalangan.</p>
+      <p class="footer-links"><a href="#">Maxfiylik siyosati</a><a href="#">Xizmat ko'rsatish shartlari</a></p>
+    </footer>
+
+    <script>
+      const value = document.querySelector('#counter-value');
+      let count = 12;
+      document.querySelector('#decrease').addEventListener('click', () => {
+        value.textContent = String(--count);
+      });
+      document.querySelector('#increase').addEventListener('click', () => {
+        value.textContent = String(++count);
+      });
+      document.querySelector('#reset').addEventListener('click', () => {
+        count = 12;
+        value.textContent = String(count);
+      });
+    </script>
+  </body>
+</html>

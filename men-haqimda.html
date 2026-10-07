@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf7ff" />
+    <title>Men haqimda | Asrorjon portfoliosi</title>
+    <link rel="stylesheet" href="./portfolio.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./asosiy.html">Asrorjon portfoliosi</a>
+      <nav class="nav" aria-label="Asosiy navigatsiya">
+        <a href="./asosiy.html">Asosiy</a>
+        <a class="active" href="./men-haqimda.html" aria-current="page">Men haqimda</a>
+        <a href="./kontakt.html">Kontakt</a>
+      </nav>
+      <a class="hire-button" href="./kontakt.html">Meni yollang</a>
+    </header>
+
+    <main class="page-content">
+      <section class="page-heading" aria-labelledby="page-title">
+        <h1 id="page-title">Men haqimda</h1>
+        <p>Toza va zamonaviy interfeyslarni yaratishga ishtiyoqi fidoyi dasturchi Asrorjon bilan tanishing.</p>
+      </section>
+
+      <div class="top-grid">
+        <section class="profile-card card" aria-labelledby="profile-name">
+          <img class="profile-photo" src="./men.jpg" alt="Asrorjonning portret surati" />
+          <div class="profile-copy">
+            <h2 id="profile-name">Asrorjon</h2>
+            <p class="role">FRONTEND DEVELOPER</p>
+            <p class="bio">Salom! Men Asrorjonman. Men oddiy, funksional va vizual jihatdan jozibali veb-tajribalarni yaratishni yoqtiradigan frontend dasturchisiman. Menda yangi texnologiyalarni o'rganish orqali mahoratimni doimiy ravishda takomillashtirishga kuchli ishtiyoq bor. Mening maqsadim foydalanuvchilar ishlatishni yoqtiradigan raqamli mahsulotlarni yaratishdir.</p>
+          </div>
+        </section>
+
+        <aside class="interests-card card" aria-labelledby="interests-title">
+          <h2 id="interests-title"><span class="heart" aria-hidden="true">♡</span> Mening qiziqishlarim</h2>
+          <ul class="interest-list">
+            <li>Koding</li>
+            <li>O’qish</li>
+            <li>Musiqa</li>
+            <li>Sayohat</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="bottom-grid">
+        <section class="skills-card card" aria-labelledby="skills-title">
+          <h2 id="skills-title"><span class="code-icon" aria-hidden="true">‹›</span> Texnik Bilimlarim</h2>
+          <div class="skill">
+            <div class="skill-label"><span>HTML</span><span>Intermediate (80%)</span></div>
+            <div class="skill-track" role="progressbar" aria-label="HTML bilimi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><span style="width: 80%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-label"><span>CSS</span><span>Intermediate (75%)</span></div>
+            <div class="skill-track" role="progressbar" aria-label="CSS bilimi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span style="width: 75%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-label"><span>JavaScript</span><span>Beginner (60%)</span></div>
+            <div class="skill-track" role="progressbar" aria-label="JavaScript bilimi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span style="width: 60%"></span></div>
+          </div>
+        </section>
+
+        <section class="counter-card" aria-labelledby="counter-title">
+          <h2 id="counter-title"><span class="text-icon" aria-hidden="true">Tт</span> Mini Funksiya: Belgilar sanovchi</h2>
+          <p class="counter-description">Belgilar sonining dinamik ravishda yangilanishini ko'rish uchun quyidagi matn maydoniga yozing (UI ko'rinishi).</p>
+          <label class="visually-hidden" for="message">Xabar matni</label>
+          <textarea id="message" placeholder="Xabaringizni shu yerga yozing..." maxlength="500"></textarea>
+          <div class="count-row"><span>Belgilar soni:</span><output id="count" aria-live="polite">0</output></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-brand">Amethyst Portfolio</p>
+      <p>© 2026 Portfolio. Barcha huquqlar himoyalangan.</p>
+      <div class="footer-links">
+        <a href="#">Maxfiylik siyosati</a>
+        <a href="#">Xizmat ko'rsatish shartlari</a>
+      </div>
+    </footer>
+
+    <script>
+      const message = document.querySelector('#message');
+      const count = document.querySelector('#count');
+      message.addEventListener('input', () => {
+        count.value = String(message.value.length);
+      });
+    </script>
+  </body>
+</html>
+
+
+

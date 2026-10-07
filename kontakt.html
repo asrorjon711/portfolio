@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf7ff" />
+    <title>Kontakt | Asrorjon portfoliosi</title>
+    <link rel="stylesheet" href="./portfolio.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./asosiy.html">Asrorjon portfoliosi</a>
+      <nav class="nav" aria-label="Asosiy navigatsiya">
+        <a href="./asosiy.html">Asosiy</a>
+        <a href="./men-haqimda.html">Men haqimda</a>
+        <a class="active" href="./kontakt.html" aria-current="page">Kontakt</a>
+      </nav>
+      <a class="hire-button" href="#contact-form">Meni yollang</a>
+    </header>
+
+    <main class="contact-content">
+      <h1 class="contact-title">Men bilan bog'laning</h1>
+      <div class="contact-title-underline" aria-hidden="true"></div>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form" action="#" method="get">
+          <label for="name">Ism</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Ismingizni kiriting"
+          />
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Email manzilingizni kiriting"
+          />
+
+          <label for="message">Xabar</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Xabaringizni yozing..."
+          ></textarea>
+
+          <button id="send-message" type="button">Yuborish</button>
+        </form>
+
+        <aside class="social-card" aria-labelledby="social-title">
+          <h2 id="social-title">Ijtimoiy tarmoqlar</h2>
+          <a
+            href="https://www.instagram.com/zvuz7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg aria-hidden="true" viewBox="0 0 24 24">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.8" cy="6.5" r=".7" class="icon-fill" />
+            </svg>
+            Instagram</a
+          >
+          <a
+            href="https://t.me/zzvcc7"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m3 11 17-7-5.5 17-3.4-7.1L3 11Z" />
+              <path d="m11.1 13.9 4.8-5" />
+            </svg>
+            Telegram</a
+          >
+          <a href="#"
+            ><svg aria-hidden="true" viewBox="0 0 24 24">
+              <rect x="3" y="5" width="18" height="14" rx="5" />
+              <path d="m10 9 5 3-5 3V9Z" />
+            </svg>
+            YouTube</a
+          >
+          <a href="#"
+            ><svg aria-hidden="true" viewBox="0 0 24 24">
+              <rect x="4" y="7" width="16" height="13" rx="1.5" />
+              <path d="M9 7V4h6v3M4 11h16M10 11v2h4v-2" />
+            </svg>
+            LinkedIn</a
+          >
+        </aside>
+      </div>
+
+      <p class="contact-note">
+        Savollaringiz yoki takliflaringiz bo'lsa, men bilan bemalol
+        bog'lanishingiz mumkin!
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-brand">Amethyst Portfolio</p>
+      <p>© 2026 Portfolio. Barcha huquqlar himoyalangan.</p>
+      <div class="footer-links">
+        <a href="#">Maxfiylik siyosati</a>
+        <a href="#">Xizmat ko'rsatish shartlari</a>
+      </div>
+    </footer>
+    <script>
+      document.querySelector("#send-message").addEventListener("click", () => {
+        alert("Yuborildi!");
+      });
+    </script>
+  </body>
+</html>
