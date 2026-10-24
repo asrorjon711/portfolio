@@ -47,10 +47,10 @@
           <h2 id="counter-title" class="section-title">Mini Funksiya: Counter</h2>
           <div class="divider"></div>
           <div class="counter" aria-live="polite">
-            <output id="counter-value" class="counter-value">12</output>
+            <output id="counter-value" class="counter-value">0</output>
             <div class="counter-controls">
-              <button class="counter-button icon-button" id="decrease" type="button" aria-label="Kamaytirish">−</button>
-              <button class="counter-button reset-button" id="reset" type="button">Qaytarish</button>
+              <button class="counter-button icon-button" id="decrease" type="button" aria-label="Kamaytirish" disabled>−</button>
+              <button class="counter-button reset-button" id="reset" type="button" disabled>Qaytarish</button>
               <button class="counter-button icon-button" id="increase" type="button" aria-label="Ko'paytirish">+</button>
             </div>
           </div>
@@ -65,19 +65,6 @@
       <p class="footer-links"><a href="#">Maxfiylik siyosati</a><a href="#">Xizmat ko'rsatish shartlari</a></p>
     </footer>
 
-    <script>
-      const value = document.querySelector('#counter-value');
-      let count = 12;
-      document.querySelector('#decrease').addEventListener('click', () => {
-        value.textContent = String(--count);
-      });
-      document.querySelector('#increase').addEventListener('click', () => {
-        value.textContent = String(++count);
-      });
-      document.querySelector('#reset').addEventListener('click', () => {
-        count = 12;
-        value.textContent = String(count);
-      });
-    </script>
+    <script type="module" src="./src/counter.js"></script>
   </body>
 </html>
