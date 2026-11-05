@@ -123,13 +123,13 @@ body { min-width: 320px; margin: 0; background: #faf7ff; }
 
 /* 4 ta ekran kengligi uchun moslashuv */
 @media (max-width: 1200px) {
-  .header, .site-header { padding-inline: max(28px, calc((100vw - 1120px) / 2)); }
+  .header, .site-header { padding-inline: clamp(28px, 5vw, 64px); }
   .main-content { width: min(calc(100% - 10vw), 1120px); }
   .intro { gap: 40px; }
   .details-grid { gap: 28px; }
 }
 @media (max-width: 992px) {
-  .header, .site-header { padding-inline: 28px; }
+  .header, .site-header { padding-inline: clamp(28px, 5vw, 64px); }
   .nav { gap: 20px; }
   .main-content { width: min(calc(100% - 48px), 880px); margin-top: 32px; }
   .intro { min-height: 280px; padding: 32px; }
