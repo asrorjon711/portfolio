@@ -5,7 +5,7 @@ export default [
   { ignores: ['dist/**', 'node_modules/**'] },
   js.configs.recommended,
   {
-    files: ['src/**/*.js'],
+    files: ['about.js', 'contact.js', 'counter.js'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
