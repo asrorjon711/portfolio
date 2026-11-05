@@ -12,7 +12,7 @@ HTML, CSS va JavaScript yordamida yaratilgan shaxsiy portfolio. Sayt uchta sahif
 
 ## Sahifalar
 
-- `index.html` — bosh sahifa manzili.
+- `index.html` — `asosiy.html` sahifasiga yo‘naltiruvchi kirish sahifasi.
 - `asosiy.html` — Asosiy sahifa.
 - `men-haqimda.html` — Men haqimda sahifasi va matn belgilar sanagichi.
 - `kontakt.html` — aloqa shakli va ijtimoiy tarmoqlar.
