@@ -9,7 +9,7 @@
   --muted: #625e70;
   --lavender: #efebff;
   --line: #e6e0f4;
-  --footer-bg: #ece7f8;
+  --footer-bg: #E9E6F8;
 }
 * { box-sizing: border-box; }
 body { min-width: 320px; margin: 0; background: #faf7ff; }
@@ -54,7 +54,7 @@ body { min-width: 320px; margin: 0; background: #faf7ff; }
 .counter-button:disabled { opacity: .45; cursor: not-allowed; }
 .icon-button { width: 32px; padding: 0; font-size: 20px; line-height: 1; }
 .reset-button { padding: 0 14px; font-size: 11px; }
-.footer, .site-footer { padding: 29px 20px 24px; background: var(--footer-bg); color: var(--muted); font-size: 12px; text-align: center; }
+.footer, .site-footer { padding: 46px 20px 48px; background: var(--footer-bg); color: var(--muted); font-size: 12px; text-align: center; }
 .footer p, .site-footer p { margin: 7px 0; }
 .footer .footer-brand, .site-footer .footer-brand { color: var(--text); font-weight: 700; }
 .footer .footer-links, .site-footer .footer-links { display: flex; justify-content: center; gap: 16px; margin-top: 14px; }
